@@ -19,6 +19,7 @@ foreign-library adder
     build-depends:    base
     type:             native-shared
     other-modules:    Adder
-    options: standalone
-    mod-def-file:  Adder.def
+    if os(Window)
+        options: standalone
+        mod-def-file:  Adder.def
     hs-source-dirs:   lib
