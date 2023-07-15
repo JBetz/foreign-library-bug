@@ -20,6 +20,6 @@ foreign-library adder
     type:             native-shared
     other-modules:    Adder
     if os(Window)
-        options: standalone
-        mod-def-file:  Adder.def
+        options:      standalone
+        mod-def-file: Adder.def
     hs-source-dirs:   lib
